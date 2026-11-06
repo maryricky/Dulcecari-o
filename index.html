@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dulce cariño | Postres individuales</title>
+  <meta name="description" content="Dulce cariño: postres individuales hechos con amor. Pastel de 3 leches, pay de limón, chocoflan, gelatinas, fresas con crema y más. Pide por WhatsApp.">
+  <meta name="theme-color" content="#d63f7e">
+  <link rel="icon" href="images/Logo.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header class="site-header" id="inicio-top">
+    <a class="brand" href="#inicio" aria-label="Dulce cariño, ir al inicio">
+      <img class="brand__logo" src="images/Logo.jpeg" alt="Logo de Dulce cariño" width="64" height="64">
+      <span class="brand__text">
+        <span class="brand__name">Dulce cariño</span>
+        <span class="brand__tag">Hecho con amor, pensado para ti</span>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#inicio" class="nav__link is-active">Inicio</a>
+      <a href="#menu" class="nav__link">Menú</a>
+      <a href="#nosotros" class="nav__link">Nosotros</a>
+      <a href="#contacto" class="nav__link">Contacto</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="cart-btn" id="cartOpen" type="button" aria-label="Abrir carrito">
+        <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.6 12.2a2 2 0 0 0 2 1.6h8.1a2 2 0 0 0 2-1.5L21.5 8H6.2"/></svg>
+        <span class="cart-btn__count" id="cartCount">0</span>
+      </button>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero__logo">
+        <img src="images/Logo.jpeg" alt="Dulce cariño, hecho con amor, pensado para ti">
+      </div>
+
+      <div class="hero__content">
+        <p class="hero__welcome">Bienvenido a</p>
+        <h1 class="hero__title">Dulce cariño</h1>
+        <div class="divider" aria-hidden="true"><span></span><i class="heart"></i><span></span></div>
+        <p class="hero__slogan">Hecho con amor,<br>pensado para ti</p>
+        <a class="btn btn--wa" id="heroWa" href="#" target="_blank" rel="noopener">
+          <svg class="icon-wa" viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.3.7 4.5 1.9 6.3L4 29l8-2.1c1.2.6 2.6 1 4 1 6.6 0 12-5.300 12-11.900S22.600 3 16 3zm0 22.300c-1.300 0-2.600-.4-3.700-1l-.5-.3-4.700 1.200 1.300-4.600-.3-.5a9.600 9.600 0 0 1-1.500-5.200C6.600 9.700 10.800 5.500 16 5.500s9.400 4.200 9.400 9.400-4.200 10.400-9.400 10.400zm5.200-7.100c-.3-.1-1.700-.8-1.900-.9-.3-.1-.5-.1-.6.100-.2.300-.7.900-.9 1.100-.2.200-.3.200-.6.100-1.600-.8-2.600-1.400-3.700-3.200-.3-.5.300-.4.800-1.500.1-.2 0-.4 0-.5l-.9-2.100c-.2-.5-.5-.5-.6-.5h-.5c-.2 0-.5.100-.7.300-.3.300-1 1-1 2.400s1 2.800 1.200 3c.1.200 2 3.100 4.900 4.300 1.800.8 2.500.8 3.400.7.500-.1 1.700-.7 1.900-1.400.2-.7.200-1.200.2-1.400-.1-.1-.3-.2-.6-.3z"/></svg>
+          <span>WhatsApp <strong id="heroWaNumber">5638830474</strong></span>
+          <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <div class="hero__photo">
+        <span class="hero__bubble">Postres<br>individuales</span>
+        <img src="images/FresasCrema.jpeg" alt="Postre individual de fresas con crema" data-fallback="Fresas con Crema">
+      </div>
+    </section>
+
+    <!-- MENÚ -->
+    <section class="menu" id="menu" aria-labelledby="menuTitle">
+      <div class="section-title">
+        <div class="section-title__row">
+          <span class="line"></span><i class="heart"></i>
+          <h2 id="menuTitle">Nuestro Menú</h2>
+          <i class="heart"></i><span class="line"></span>
+        </div>
+        <p>Postres individuales</p>
+      </div>
+
+      <div class="grid" id="productGrid" aria-live="polite"></div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section class="about" id="nosotros" aria-labelledby="aboutTitle">
+      <div class="about__inner">
+        <h2 id="aboutTitle">Nosotros</h2>
+        <p>En <strong>Dulce cariño</strong> preparamos postres individuales listos para disfrutar: cada vasito se hace con ingredientes de calidad y con el mismo cuidado que pondríamos en un regalo para alguien querido.</p>
+        <p>Pastel de 3 leches, pay de limón, chocoflan, gelatinas, fresas con crema y flan napolitano. Elige los que quieras y mándanos tu pedido por WhatsApp.</p>
+      </div>
+    </section>
+
+    <!-- BENEFICIOS / CONTACTO -->
+    <section class="perks" id="contacto" aria-label="Contacto y beneficios">
+      <ul class="perks__list">
+        <li>
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 41S6 29.500 6 17.500C6 11.700 10.300 8 15 8c3.800 0 7 2.200 9 5.500C26 10.200 29.200 8 33 8c4.700 0 9 3.700 9 9.500C42 29.500 24 41 24 41z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/></svg>
+          <span>Ingredientes<br>de calidad</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M12 24h24l-3 16H15z M10 24c0-5 3-7 7-7 1-4 4-7 7-7s6 3 7 7c4 0 7 2 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/><path d="M19 28l1.500 8M24 28v8M29 28l-1.500 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <span>Presentaciones<br>individuales</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 22s-9-5.700-9-11.500C15 7 17.500 5 20 5c1.800 0 3.300 1 4 2.600C24.700 6 26.200 5 28 5c2.500 0 5 2 5 5.500C33 16.300 24 22 24 22z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M4 30h8l8 3h8c2 0 3 2.500 1 3.500L22 39M12 30v12H4M28 33l9-4c2-1 4 1 3 3l-8 8-10 2" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>El toque dulce<br>para cada ocasión</span>
+        </li>
+      </ul>
+
+      <a class="btn btn--wa btn--wide" id="contactWa" href="#" target="_blank" rel="noopener">
+        <svg class="icon-wa" viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9.4 3 4 8.300 4 14.900c0 2.300.7 4.500 1.900 6.300L4 29l8-2.100c1.200.6 2.600 1 4 1 6.600 0 12-5.300 12-11.900S22.600 3 16 3zm0 22.300c-1.300 0-2.600-.4-3.700-1l-.5-.3-4.700 1.200 1.300-4.600-.3-.5a9.600 9.600 0 0 1-1.500-5.200C6.600 9.700 10.800 5.500 16 5.500s9.400 4.200 9.400 9.400-4.200 10.400-9.400 10.400zm5.200-7.100c-.3-.1-1.700-.8-1.900-.9-.3-.1-.5-.1-.6.100-.2.300-.7.900-.9 1.100-.2.200-.3.200-.6.100-1.600-.8-2.600-1.400-3.700-3.200-.3-.5.300-.4.800-1.500.1-.2 0-.4 0-.5l-.9-2.100c-.2-.5-.5-.5-.6-.5h-.5c-.2 0-.5.100-.7.300-.3.300-1 1-1 2.400s1 2.800 1.200 3c.1.200 2 3.100 4.900 4.300 1.800.8 2.500.8 3.400.7.500-.1 1.700-.7 1.900-1.400.2-.7.200-1.200.2-1.400-.1-.1-.3-.2-.6-.3z"/></svg>
+        <span class="btn__stack"><span>Contáctanos por WhatsApp</span><strong id="contactWaNumber">5638830474</strong></span>
+        <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </section>
+  </main>
+
+  <!-- PIE -->
+  <footer class="site-footer">
+    <div class="social" aria-label="Redes sociales">
+      <a href="#" aria-label="Facebook" data-social="facebook">
+        <svg viewBox="0 0 24 24"><path fill="currentColor" d="M13.500 22v-8.200h2.800l.5-3.300h-3.300V8.400c0-.9.400-1.700 1.800-1.700h1.600V3.800c-.3 0-1.300-.2-2.500-.2-2.600 0-4.300 1.600-4.300 4.400v2.500H7.300v3.300h2.800V22z"/></svg>
+      </a>
+      <a href="#" aria-label="Instagram" data-social="instagram">
+        <svg viewBox="0 0 24 24"><rect x="3.500" y="3.500" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.200" cy="6.800" r="1.200" fill="currentColor"/></svg>
+      </a>
+      <a href="#" aria-label="TikTok" data-social="tiktok">
+        <svg viewBox="0 0 24 24"><path fill="currentColor" d="M16.600 3c.3 2.300 1.600 3.700 3.900 3.900v3c-1.300.1-2.500-.3-3.800-1.100v5.600c0 7.100-7.700 9.300-10.800 4.200-2-3.300-.8-9 5.500-9.200v3.200c-.5.100-1 .2-1.400.4-1.400.5-2.200 1.400-2 3 .4 3.100 6.100 4 5.600-2V3z"/></svg>
+      </a>
+    </div>
+    <p class="footer__text">Dulce cariño <i class="heart heart--light"></i> Hecho con amor, pensado para ti</p>
+    <div class="footer__deco" aria-hidden="true"><span></span><i class="heart heart--light"></i><span></span></div>
+  </footer>
+
+  <!-- CARRITO (panel lateral) -->
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="cart" id="cart" aria-label="Carrito de compras" aria-hidden="true">
+    <div class="cart__head">
+      <h2>Tu pedido</h2>
+      <button type="button" class="cart__close" id="cartClose" aria-label="Cerrar carrito">&times;</button>
+    </div>
+
+    <div class="cart__body" id="cartItems"></div>
+
+    <div class="cart__foot" id="cartFoot">
+      <div class="cart__field">
+        <label for="custName">Tu nombre (opcional)</label>
+        <input type="text" id="custName" autocomplete="name" placeholder="Ej. Ana">
+      </div>
+      <div class="cart__field">
+        <label for="custNote">Notas para tu pedido (opcional)</label>
+        <textarea id="custNote" rows="2" placeholder="Fecha de entrega, dirección, etc."></textarea>
+      </div>
+      <div class="cart__total"><span>Total</span><strong id="cartTotal">$0</strong></div>
+      <a class="btn btn--wa btn--block" id="checkoutBtn" href="#" target="_blank" rel="noopener">Enviar pedido por WhatsApp</a>
+      <button type="button" class="link-btn" id="clearCart">Vaciar carrito</button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
